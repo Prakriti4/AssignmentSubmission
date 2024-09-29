@@ -1,0 +1,721 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SchoolManagementSystem.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SchoolManagementSystem.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\download.png",
+      "PackagePath": "staticwebassets\\download.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\016821f6-a230-4e30-bd2f-38250624ca94_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\016821f6-a230-4e30-bd2f-38250624ca94_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\0253346b-9c97-4d38-a8b9-a13ac5a50eeb_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\0253346b-9c97-4d38-a8b9-a13ac5a50eeb_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\07909816-5518-419b-bd92-aa6fe435cd90_429591922_939525444361158_7893820532595730409_n.jpg",
+      "PackagePath": "staticwebassets\\files\\07909816-5518-419b-bd92-aa6fe435cd90_429591922_939525444361158_7893820532595730409_n.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\083a2b4f-8f9f-42b4-8ab2-3ac6540e62a0_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\083a2b4f-8f9f-42b4-8ab2-3ac6540e62a0_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\0d6b23f9-a25b-4551-b5da-0f5a72489f66_heart.png",
+      "PackagePath": "staticwebassets\\files\\0d6b23f9-a25b-4551-b5da-0f5a72489f66_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\0eed3099-3a86-4fe4-8b6b-318e3ee43045_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\0eed3099-3a86-4fe4-8b6b-318e3ee43045_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\10d3a157-1fd3-4321-946f-fb787ab084b5_4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\10d3a157-1fd3-4321-946f-fb787ab084b5_4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\19612937-5e6a-4e07-885b-935d0b94c0eb_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\19612937-5e6a-4e07-885b-935d0b94c0eb_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\1a5fb3e8-26d0-4ad2-8e31-d62b918b79aa_966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\1a5fb3e8-26d0-4ad2-8e31-d62b918b79aa_966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\212a4ae7-1c77-4de2-aa7c-16f6c58be0b3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\212a4ae7-1c77-4de2-aa7c-16f6c58be0b3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\28740f8c-463d-4f6f-b322-e748029431e8_8863f2d3-8c0a-4188-8cc5-c4bc182ae3d4_ds image.jpg",
+      "PackagePath": "staticwebassets\\files\\28740f8c-463d-4f6f-b322-e748029431e8_8863f2d3-8c0a-4188-8cc5-c4bc182ae3d4_ds image.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\3578d346-782e-445c-b107-e4796c441dbd_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\3578d346-782e-445c-b107-e4796c441dbd_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\3d296d02-ba5f-493d-ad4f-484d9fe4d07f_heart.png",
+      "PackagePath": "staticwebassets\\files\\3d296d02-ba5f-493d-ad4f-484d9fe4d07f_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\3d376eb1-1030-48e4-b23f-14bad1c3591d_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\3d376eb1-1030-48e4-b23f-14bad1c3591d_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\41fc745f-ddda-4d79-8054-32d23b4ec75f_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\41fc745f-ddda-4d79-8054-32d23b4ec75f_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\45737a00-08f5-4355-8f73-a56bef3f8615_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\45737a00-08f5-4355-8f73-a56bef3f8615_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\4a69b3db-0c0b-413e-8404-aa984ee06312_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\4a69b3db-0c0b-413e-8404-aa984ee06312_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\4d69a7a9-7710-4795-a9fe-1d69176fb220_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\4d69a7a9-7710-4795-a9fe-1d69176fb220_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\4d9015c6-7c31-4553-b6cb-3fd853dd87a3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\4d9015c6-7c31-4553-b6cb-3fd853dd87a3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\538aa8de-199e-454a-a04f-d31ac517c665_ABSTRACT.docx",
+      "PackagePath": "staticwebassets\\files\\538aa8de-199e-454a-a04f-d31ac517c665_ABSTRACT.docx"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\59f78419-a07a-47a6-860b-b7b4bdaf89a3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\59f78419-a07a-47a6-860b-b7b4bdaf89a3_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\5e4bbe82-1623-4c45-beb7-c4aced7b4b2a_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\5e4bbe82-1623-4c45-beb7-c4aced7b4b2a_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\63e3a4a0-5179-48b3-bc3a-cd75cd855108_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\63e3a4a0-5179-48b3-bc3a-cd75cd855108_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\66fd49e9-e7a4-4f68-9d25-40d27660e4ed_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\66fd49e9-e7a4-4f68-9d25-40d27660e4ed_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\6b2b7882-a8d1-4930-afa2-ae3a06e08994_4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\6b2b7882-a8d1-4930-afa2-ae3a06e08994_4d436c0d-b830-4f2d-b4e2-175fd0a5371e_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\6f2dec60-8ba0-4c24-ad9b-db6aebc40e1b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\6f2dec60-8ba0-4c24-ad9b-db6aebc40e1b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\6f80177c-fe28-48fd-b071-a46804cc44f4_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\6f80177c-fe28-48fd-b071-a46804cc44f4_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\6fa0a403-ce45-47b4-9852-9a17497391f2_resume_prapanna_bista.pdf",
+      "PackagePath": "staticwebassets\\files\\6fa0a403-ce45-47b4-9852-9a17497391f2_resume_prapanna_bista.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\76dd89e0-f2ed-4a7e-b26e-b7c5b3b7110b_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\76dd89e0-f2ed-4a7e-b26e-b7c5b3b7110b_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\7a4bf529-21c2-456b-a8a6-f3d302fc3f09_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\7a4bf529-21c2-456b-a8a6-f3d302fc3f09_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\7df020e5-f80a-48d9-849e-004737da9984_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\7df020e5-f80a-48d9-849e-004737da9984_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\83d7f7fe-949f-4a28-a6a4-fbf35dd3a460_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\83d7f7fe-949f-4a28-a6a4-fbf35dd3a460_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\8863f2d3-8c0a-4188-8cc5-c4bc182ae3d4_ds image.jpg",
+      "PackagePath": "staticwebassets\\files\\8863f2d3-8c0a-4188-8cc5-c4bc182ae3d4_ds image.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\8879fb3d-5cef-499f-abfd-bf984f275e59_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\8879fb3d-5cef-499f-abfd-bf984f275e59_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\8a749d26-ce3e-4c9a-9f63-d23be998aa44_heart.png",
+      "PackagePath": "staticwebassets\\files\\8a749d26-ce3e-4c9a-9f63-d23be998aa44_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\99815752-9a36-4130-87fe-1e82337fc641_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\99815752-9a36-4130-87fe-1e82337fc641_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\9a6876b7-4114-4bd6-b475-ea7794c3919b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\9a6876b7-4114-4bd6-b475-ea7794c3919b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\9bb6f00e-2d47-40f7-8a09-a95ce0d4f568_GRE-Big-Book.pdf",
+      "PackagePath": "staticwebassets\\files\\9bb6f00e-2d47-40f7-8a09-a95ce0d4f568_GRE-Big-Book.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\9ed5e434-960c-4f6a-bd96-8f7f06ea4c1c_resume_prapanna_bista.pdf",
+      "PackagePath": "staticwebassets\\files\\9ed5e434-960c-4f6a-bd96-8f7f06ea4c1c_resume_prapanna_bista.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\9f5acbbe-639a-45e0-b113-695a737d9161_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\9f5acbbe-639a-45e0-b113-695a737d9161_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\a290b145-b823-4fa3-beaf-2436b23a469b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\a290b145-b823-4fa3-beaf-2436b23a469b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\a62b6119-7d4c-4126-b3a3-8767c2b549c2_heart.png",
+      "PackagePath": "staticwebassets\\files\\a62b6119-7d4c-4126-b3a3-8767c2b549c2_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\a91f5eae-c3b2-4eed-bbdc-f06109f4655d_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\a91f5eae-c3b2-4eed-bbdc-f06109f4655d_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\b75abbef-acaa-4f83-b5aa-25063e4adbf4_966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\b75abbef-acaa-4f83-b5aa-25063e4adbf4_966e6dc2-9f2a-49b7-a521-0af178904543_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\b8b2cb33-65d9-4095-9644-f2fcf57e360f_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\b8b2cb33-65d9-4095-9644-f2fcf57e360f_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\c7cab79e-6969-4400-8283-4142791af27b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\c7cab79e-6969-4400-8283-4142791af27b_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\d715b82e-4ad1-46d8-8b5c-c16b4fdda582_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\d715b82e-4ad1-46d8-8b5c-c16b4fdda582_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\e1b1383f-0f61-486a-b5ea-69cbfa875c0a_ds image.jpg",
+      "PackagePath": "staticwebassets\\files\\e1b1383f-0f61-486a-b5ea-69cbfa875c0a_ds image.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\e5a2b7e2-38c7-47c3-83de-df9b07b4aeab_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\files\\e5a2b7e2-38c7-47c3-83de-df9b07b4aeab_42394e70-da78-40eb-ac71-7e80f753cd8f_d437e513-7421-4400-b25d-5281970d52b9_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\e846e98f-6f3b-467a-a620-259e4c6362f6_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf",
+      "PackagePath": "staticwebassets\\files\\e846e98f-6f3b-467a-a620-259e4c6362f6_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\f028e391-051c-4c1a-a23e-831d3b1d4840_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf",
+      "PackagePath": "staticwebassets\\files\\f028e391-051c-4c1a-a23e-831d3b1d4840_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (1).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\f6629b50-4fbb-40ea-b6ed-b179ef93f210_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\f6629b50-4fbb-40ea-b6ed-b179ef93f210_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\files\\f81d00bc-985c-41a3-83db-94022d203994_Computer Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\files\\f81d00bc-985c-41a3-83db-94022d203994_Computer Fundamentals.pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\046b6515-c15f-4741-a630-022436bc8e06_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\046b6515-c15f-4741-a630-022436bc8e06_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\0f933826-a088-4578-9d8a-18c61c4863a2_viber_image_2021-11-19_08-30-39-764.jpg",
+      "PackagePath": "staticwebassets\\images\\0f933826-a088-4578-9d8a-18c61c4863a2_viber_image_2021-11-19_08-30-39-764.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\1b28f550-ec9b-4b5e-9008-d299eea1e33b_heart.png",
+      "PackagePath": "staticwebassets\\images\\1b28f550-ec9b-4b5e-9008-d299eea1e33b_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\251257a8-c96f-451e-a822-30b8970095f0_heart.png",
+      "PackagePath": "staticwebassets\\images\\251257a8-c96f-451e-a822-30b8970095f0_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\28dbeb71-acf4-4f97-bb73-64e02afb4093_heart.png",
+      "PackagePath": "staticwebassets\\images\\28dbeb71-acf4-4f97-bb73-64e02afb4093_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\2ce508e8-5076-47d1-9aee-0eda5a899ed8_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\2ce508e8-5076-47d1-9aee-0eda5a899ed8_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\2fc6907f-e953-4c12-83ac-5b69049fa195_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\2fc6907f-e953-4c12-83ac-5b69049fa195_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\34fdc51f-04ea-4cf2-9db5-c1afd5c8323f_heart.png",
+      "PackagePath": "staticwebassets\\images\\34fdc51f-04ea-4cf2-9db5-c1afd5c8323f_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\47ca5517-d954-43d3-80e6-8d499e6da3fe_viber_image_2022-12-07_15-29-10-212.jpg",
+      "PackagePath": "staticwebassets\\images\\47ca5517-d954-43d3-80e6-8d499e6da3fe_viber_image_2022-12-07_15-29-10-212.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\5b055690-94b6-4e0e-8da0-0a5d39648870_heart.png",
+      "PackagePath": "staticwebassets\\images\\5b055690-94b6-4e0e-8da0-0a5d39648870_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\6734b61f-3148-42d2-8925-fdeef189865b_heart.png",
+      "PackagePath": "staticwebassets\\images\\6734b61f-3148-42d2-8925-fdeef189865b_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\6f9eaf21-0989-47b1-a25d-d1c7f9496f09_heart.png",
+      "PackagePath": "staticwebassets\\images\\6f9eaf21-0989-47b1-a25d-d1c7f9496f09_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\75f8f079-bb83-43c1-963f-105604c15c2f_viber_image_2022-12-07_15-29-10-212.jpg",
+      "PackagePath": "staticwebassets\\images\\75f8f079-bb83-43c1-963f-105604c15c2f_viber_image_2022-12-07_15-29-10-212.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\7a1f70db-0af5-4502-bc9c-7740dbc92b56_heart.png",
+      "PackagePath": "staticwebassets\\images\\7a1f70db-0af5-4502-bc9c-7740dbc92b56_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\7d5c89a1-f41d-4258-844f-4990ecb4e678_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\7d5c89a1-f41d-4258-844f-4990ecb4e678_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\81e05256-9322-4e80-96e9-2c03a0f7f114_heart.png",
+      "PackagePath": "staticwebassets\\images\\81e05256-9322-4e80-96e9-2c03a0f7f114_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\830a57cd-f67f-47af-94fb-3dbbad19bb7f_heart.png",
+      "PackagePath": "staticwebassets\\images\\830a57cd-f67f-47af-94fb-3dbbad19bb7f_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\89e75173-8b6d-4405-956a-241a55242960_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf",
+      "PackagePath": "staticwebassets\\images\\89e75173-8b6d-4405-956a-241a55242960_ac19db0f-f54a-4695-bd48-6743ff13a0d6_fundametalofcomputer (2).pdf"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\89f81831-1425-464d-bc23-219b414055ba_heart.png",
+      "PackagePath": "staticwebassets\\images\\89f81831-1425-464d-bc23-219b414055ba_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\8c7589be-afc8-4eca-a0b6-aba75d7799da_ds image.jpg",
+      "PackagePath": "staticwebassets\\images\\8c7589be-afc8-4eca-a0b6-aba75d7799da_ds image.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\9261d48f-d9fc-4312-b557-bc46cbfafc62_heart.png",
+      "PackagePath": "staticwebassets\\images\\9261d48f-d9fc-4312-b557-bc46cbfafc62_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\biology.jpg",
+      "PackagePath": "staticwebassets\\images\\biology.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\c6f4f6c3-bb72-4e60-9fc2-c43e64c9db04_ds image.jpg",
+      "PackagePath": "staticwebassets\\images\\c6f4f6c3-bb72-4e60-9fc2-c43e64c9db04_ds image.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\cd81bd8f-206e-477b-94b7-9f9acce10fee_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\cd81bd8f-206e-477b-94b7-9f9acce10fee_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\ce45044c-d5a3-4616-9152-e8b0a13a2882_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\ce45044c-d5a3-4616-9152-e8b0a13a2882_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\cf670cfe-39d9-468e-a6ae-a787aae1f6b8_heart.png",
+      "PackagePath": "staticwebassets\\images\\cf670cfe-39d9-468e-a6ae-a787aae1f6b8_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\chemistry.jpg",
+      "PackagePath": "staticwebassets\\images\\chemistry.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\computer.jpg",
+      "PackagePath": "staticwebassets\\images\\computer.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\dadb0387-4f84-419b-8643-5a8dab35030d_viber_image_2024-06-22_20-49-25-485.jpg",
+      "PackagePath": "staticwebassets\\images\\dadb0387-4f84-419b-8643-5a8dab35030d_viber_image_2024-06-22_20-49-25-485.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\dba9d748-bcc2-4ba1-af42-d491aee741ee_Snapchat-2115693543.jpg",
+      "PackagePath": "staticwebassets\\images\\dba9d748-bcc2-4ba1-af42-d491aee741ee_Snapchat-2115693543.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\e1d08997-1ffc-4354-85a2-cd72f9ab25fb_heart.png",
+      "PackagePath": "staticwebassets\\images\\e1d08997-1ffc-4354-85a2-cd72f9ab25fb_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\ef439152-8bea-4331-8260-31ea566ab42c_heart.png",
+      "PackagePath": "staticwebassets\\images\\ef439152-8bea-4331-8260-31ea566ab42c_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty1.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty1.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty2.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty2.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty3.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty3.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty4.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty4.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty5.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty5.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\faculty6.jpg",
+      "PackagePath": "staticwebassets\\images\\faculty6.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\fd9fbffe-fdd2-46b3-a42c-8bbd5bb9a23b_heart.png",
+      "PackagePath": "staticwebassets\\images\\fd9fbffe-fdd2-46b3-a42c-8bbd5bb9a23b_heart.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery1.webp",
+      "PackagePath": "staticwebassets\\images\\gallery1.webp"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery10.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery10.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery2.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery2.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery3.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery4.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery4.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery5.webp",
+      "PackagePath": "staticwebassets\\images\\gallery5.webp"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery6.jpeg",
+      "PackagePath": "staticwebassets\\images\\gallery6.jpeg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery7.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery7.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery8.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery8.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\gallery9.jpeg",
+      "PackagePath": "staticwebassets\\images\\gallery9.jpeg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\joyful-school-dismissal-stockcake.jpg",
+      "PackagePath": "staticwebassets\\images\\joyful-school-dismissal-stockcake.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\math.jpg",
+      "PackagePath": "staticwebassets\\images\\math.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\physics.jpg",
+      "PackagePath": "staticwebassets\\images\\physics.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\images\\science.jpg",
+      "PackagePath": "staticwebassets\\images\\science.jpg"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DotNetInternProject\\SchoolManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SchoolManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SchoolManagementSystem.props",
+      "PackagePath": "build\\SchoolManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SchoolManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\SchoolManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SchoolManagementSystem.props",
+      "PackagePath": "buildTransitive\\SchoolManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

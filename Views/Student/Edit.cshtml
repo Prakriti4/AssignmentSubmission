@@ -1,0 +1,81 @@
+﻿@model SchoolManagementSystem.Models.Student
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h2>Edit Student</h2>
+
+<div class="container">
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <!-- Student Name -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Enter Student Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" placeholder="Enter Address" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <!-- Gmail -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter Email Address" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="DateofBirth" class="control-label"></label>
+                <input asp-for="DateofBirth" class="form-control" type="date" />
+                <span asp-validation-for="DateofBirth" class="text-danger"></span>
+            </div>
+
+            <!-- Course Dropdown -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="SemesterId" class="control-label"></label>
+                <select asp-for="SemesterId" class="form-control" asp-items="ViewBag.Semesters"></select>
+                <span asp-validation-for="SemesterId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FacultyId" class="control-label">Faculty</label>
+                <select asp-for="FacultyId" asp-items="ViewBag.Faculties" class="form-control">
+                    <option value="">Select Faculty</option>
+                </select>
+                <span asp-validation-for="FacultyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SectionId" class="control-label">Section</label>
+                <select asp-for="SectionId" asp-items="ViewBag.Sections" class="form-control">
+                    <option value="">Select Faculty</option>
+                </select>
+                <span asp-validation-for="SectionId" class="text-danger"></span>
+            </div>
+
+            <!-- Image Upload -->
+            <div class="form-group col-lg-6 mt-2">
+                <label asp-for="Image" class="control-label"></label>
+                <div class="custom-file">
+                    <input asp-for="Image" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Submit and Cancel Buttons -->
+        <div class="mt-5">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-page="/Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>

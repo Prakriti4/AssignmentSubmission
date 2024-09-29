@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SchoolManagementSystem.Models.Submission>
+
+@if (User.IsInRole("Student"))
+{
+    <a asp-controller="Submission" asp-action="Create" class="btn btn-primary">Submit Task</a>
+}
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">SN</th>
+                <th scope="col">Description</th>
+                <th scope="col">FileName</th>
+                @if (User.IsInRole("Teacher"))
+                {
+                    <th scope="col">Submission Date</th>
+                    <th scope="col">Student</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Assign Grade</th> <!-- New Column for Grade Assignment -->
+                }
+                <th scope="col">Assignment</th>
+                @if (User.IsInRole("Student"))
+                {
+                    <th scope="col">Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+            }
+
+            @foreach (var submission in Model)
+            {
+                <tr>
+                    <th scope="row">@(i++)</th>
+                    <td>@submission.Description</td>
+                    <td>
+                        <a asp-action="Download" asp-route-filepath="@submission.FilePath">
+                            @submission.FileName
+                        </a>
+                    </td>
+
+                    <!-- Conditionally display extra data for teachers -->
+                    @if (User.IsInRole("Teacher"))
+                    {
+                        <td>@submission?.SubmissionDate</td>
+                        <td>@submission?.Student?.Name</td>
+                        <td>@submission?.Grade?.LetterGrade</td>
+
+                        <!-- Inline form for assigning grade using dropdown -->
+                        <td>
+                            <form asp-action="AssignGrade" method="post">
+                                <input type="hidden" name="SubmissionId" value="@submission.Id" />
+                                <select name="GradeId" class="form-control" required>
+                                    <option value="">Select Grade</option>
+                                    @foreach (var grade in ViewBag.Grades as List<Grade>)
+                                    {
+                                        <option value="@grade.Id">@grade.LetterGrade</option>
+                                    }
+                                </select>
+                                <button type="submit" class="btn btn-success btn-sm mt-1">Submit</button>
+                            </form>
+                        </td>
+                    }
+                    <td>@submission?.Assignment?.Title</td>
+
+                    <td>
+                        @if (User.IsInRole("Student"))
+                        {
+                            <!-- Common actions -->
+                            <a asp-controller="Submission" asp-action="Edit" asp-route-id="@submission.Id" class="btn btn-warning">Edit</a>
+                            <a asp-controller="Submission" asp-action="Delete" asp-route-id="@submission.Id" class="btn btn-danger">Delete</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,55 @@
+﻿@model SchoolManagementSystem.Models.Submission
+
+@{
+    ViewData["Title"] = "Create Submission";
+}
+
+<h2>Review Submission</h2>
+
+<form asp-controller="Submission" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" placeholder="Enter Description " />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+  
+        <div class="form-group">
+            <label asp-for="SubmissionDate" class="control-label"></label>
+            <input asp-for="SubmissionDate" class="form-control" placeholder="Enter SubmissionDate " />
+            <span asp-validation-for="SubmissionDate" class="text-danger"></span>
+        </div>
+    
+    <div class="form-group">
+        <label asp-for="FormFile" class="control-label"></label>
+        <div class="custom-file">
+            <input asp-for="FormFile" class="custom-file-input" id="customFile">
+        </div>
+        <span asp-validation-for="FormFile" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="AssignmentId" class="control-label"></label>
+        <select asp-for="AssignmentId" class="form-control" asp-items="ViewBag.Assignments"></select>
+        <span asp-validation-for="AssignmentId" class="text-danger"></span>
+    </div>
+   
+        <div class="form-group">
+            <label asp-for="StudentId" class="control-label"></label>
+            <select asp-for="StudentId" class="form-control" asp-items="ViewBag.Students"></select>
+            <span asp-validation-for="StudentId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="GradeId" class="control-label"></label>
+            <select asp-for="GradeId" class="form-control" asp-items="ViewBag.Grades"></select>
+            <span asp-validation-for="GradeId" class="text-danger"></span>
+        </div>
+
+  
+
+</form>
+<head>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>

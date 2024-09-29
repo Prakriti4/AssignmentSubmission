@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SchoolManagementSystem.Models.Assignment>
+
+@{
+    ViewData["Title"] = "Assignment List";
+}
+  @if (User.IsInRole("Teacher"))
+{
+    <a asp-controller="Assignment" asp-action="Create" class="btn btn-primary">Create New Assignment</a>}
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">SN</th>
+                <th scope="col">Title</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Submission Date</th>
+                <th scope="col">File Path</th>
+                <th scope="col">Subject</th>
+     
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+            }
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@(i++)</th>
+                    <td>@item.Title</td>
+                    <td>@item.DueDate.ToString("yyyy-MM-dd")</td>
+                    <td>@item.SubmissionDate.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a asp-action="Download" asp-route-filepath ="@item.FilePath">
+                            @item.FileName
+                        </a>
+                    </td>
+                    <td>@item.Subject.SubjectName</td>
+              
+                    <td>
+                        @if (User.IsInRole("Teacher"))
+                        {
+                            <a asp-controller="Assignment" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                            <a asp-controller="Assignment" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                        }
+                       
+                            <a asp-controller="Assignment" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                        
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,54 @@
+﻿@model SchoolManagementSystem.Models.Subject
+
+@{
+    ViewData["Title"] = "Edit Subject";
+}
+
+<h2>Edit Subject</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="SubjectName" class="control-label"></label>
+        <input asp-for="SubjectName" class="form-control" placeholder="Enter Subject Name" />
+        <span asp-validation-for="SubjectName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SubjectCode" class="control-label"></label>
+        <input asp-for="SubjectCode" class="form-control" placeholder="Enter Subject Code" />
+        <span asp-validation-for="SubjectCode" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Credits" class="control-label"></label>
+        <input asp-for="Credits" class="form-control" placeholder="Enter Credits" />
+        <span asp-validation-for="Credits" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control" placeholder="Enter Description"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FacultyId" class="control-label">Faculty</label>
+        <select asp-for="FacultyId" asp-items="ViewBag.Faculties" class="form-control">
+            <option value="">Select Faculty</option>
+        </select>
+        <span asp-validation-for="FacultyId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SemesterId" class="control-label">Semester</label>
+        <select asp-for="SemesterId" asp-items="ViewBag.Semesters" class="form-control">
+            <option value="">Select Semester</option>
+        </select>
+        <span asp-validation-for="SemesterId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

@@ -1,0 +1,36 @@
+﻿@model SchoolManagementSystem.Models.Faculty
+
+@{
+    ViewData["Title"] = "Create Faculty";
+} 
+
+<h2>Faculty Form Fill-Out</h2>
+
+<form asp-controller="Faculty" asp-action="Create" method="post">
+
+    <!-- Name -->
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" placeholder="Enter Faculty Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <!-- Dean -->
+    <div class="form-group">
+        <label asp-for="Dean" class="control-label"></label>
+        <input asp-for="Dean" class="form-control" placeholder="Enter Dean's Name">
+        <span asp-validation-for="Dean" class="text-danger"></span>
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter Description"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+ 
+
+  
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

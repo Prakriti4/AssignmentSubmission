@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SchoolManagementSystem.Models.Faculty>
+
+<a asp-controller="Faculty" asp-action="Create" class="btn btn-primary">Add Faculty</a>
+
+<div class="text-center">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">SN</th>
+				<th scope="col">Name</th>
+				<th scope="col">Dean</th>
+				<th scope="col">Description</th>	
+				<th scope="col">NumberOfSemester</th>
+				<th scope="col">Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			@{
+				int i = 1;
+			}
+
+			@foreach (var faculty in Model)
+			{
+				<tr>
+					<th scope="row">@(i++)</th>
+					<td>@faculty.Name</td>
+					<td>@faculty.Dean</td>
+					<td>@faculty.Description</td>
+					<td>@faculty.NumberOfSemester</td>
+					
+				
+					<td>
+						<a asp-controller="Faculty" asp-action="Edit" asp-route-id="@faculty.Id" class="btn btn-warning">Edit</a>
+						<a asp-controller="Faculty" asp-action="Delete" asp-route-id="@faculty.Id" class="btn btn-danger">Delete</a>
+					</td>
+				</tr>
+			}
+
+
+
+		</tbody>
+	</table>
+</div>

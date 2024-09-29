@@ -1,0 +1,11 @@
+﻿#Ignore Visual Studio files
+.vs/
+
+
+
+
+#Ignore user-specific files
+appsettings.json
+
+wwwroot/images
+wwwroot/files

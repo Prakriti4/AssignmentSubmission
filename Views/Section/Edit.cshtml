@@ -1,0 +1,31 @@
+﻿@model SchoolManagementSystem.Models.Section
+
+@{
+    ViewData["Title"] = "Edit Section";
+} 
+
+<h2>Edit Section Form</h2>
+
+<form asp-controller="Section" asp-action="Edit" method="post">
+    <!-- Faculty ID (Hidden) -->
+    <input type="hidden" asp-for="Id" />
+
+    <!-- Section -->
+    <div class="form-group">
+        <label asp-for="SectionName" class="control-label"></label>
+        <input asp-for="SectionName" class="form-control" placeholder="Enter Section">
+        <span asp-validation-for="SectionName" class="text-danger"></span>
+    </div>
+
+    <!--Semester -->
+    <div class="form-group">
+        <label for="Semester">Semester</label>
+        <select asp-for="SemesterId" asp-items="ViewBag.SemesterList">
+            <option value="">Select a semester</option>
+        </select>
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

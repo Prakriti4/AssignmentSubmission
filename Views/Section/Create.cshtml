@@ -1,0 +1,28 @@
+﻿@model SchoolManagementSystem.Models.Section
+
+ @{
+     ViewData["Title"] = "Create Section";
+ }  
+
+<h2>Section Form Fill-Out</h2>
+
+<form asp-controller="Section" asp-action="Create" method="post">
+
+    <!-- SectionName -->
+    <div class="form-group">
+        <label asp-for="SectionName" class="control-label"></label>
+        <input asp-for="SectionName" class="form-control" placeholder="Enter Section Name">
+        <span asp-validation-for="SectionName" class="text-danger"></span>
+    </div>
+
+    <!--Semester -->
+    <div class="form-group">
+        <label asp-for="SemesterId" class="control-label"></label>
+        <select asp-for="SemesterId" class="form-control" asp-items="ViewBag.Semesters"></select>
+        <span asp-validation-for="SemesterId" class="text-danger"></span>
+    </div>
+
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

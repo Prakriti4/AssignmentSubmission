@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
+   <link href="~/css/style.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!------Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  bg-white border-bottom box-shadow"  style="background-color: #EAF7F7 !important">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            
+                <!-- Right Section - SMS Logo -->
+                <div class="d-flex">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="~/images/logo.png" width="80" height="80" class="d-inline-block align-top ms-4 " alt="" style="box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);"></a>
+                </div>
+
+                <!-- Center Section - Navigation Links -->
+                <div class="d-flex justify-content-center flex-column">
+                    <ul class="navbar-nav  text-center">
+                       
+                        @if (User.IsInRole("Teacher") || User.IsInRole("Student"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Assignment" asp-action="Index">Assignment</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Faculty" asp-action="Index">Faculty</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Section" asp-action="Index">Section</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Subject" asp-action="Index">Subject</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Teacher" asp-action="Index">Teacher</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Student" asp-action="Index">Student</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Teacher") || User.IsInRole("Student"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-5" asp-area="" asp-controller="Submission" asp-action="Index">Submit</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Left Section - Login/Register -->
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav flex-column ">
+                        <li class="nav-item fs-5">
+                            <partial name="_LoginPartial" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="containr w-100 h-100">
+        <main role="main" class="pb-3 w-100 h-100">
+            @RenderBody()
+        </main>
+    </div>
+ 
+     <footer class="border-bottom">
+        
+             <div class="container">
+                 <div class="footer-content">
+                     <div class="footer-section about">
+                         <h2>Education</h2>
+                     
+                         <div class="social-icons">
+                             <a href="#"><i class="fab fa-facebook"></i></a>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-linkedin"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                         </div>
+                     </div>
+                     <div class="footer-section links">
+                         <h2>Quick Links</h2>
+                         <ul>
+                             <li><a href="#">home</a></li>
+                             <li><a href="#">about</a></li>
+                             <li><a href="#">courses</a></li>
+                             <li><a href="#">contact</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-section links">
+                         <h2>Useful Links</h2>
+                         <ul>
+                             <li><a href="#">help center</a></li>
+                             <li><a href="#">ask questions</a></li>
+                             <li><a href="#">send feedback</a></li>
+                             <li><a href="#">terms of use</a></li>
+                             <li><a  asp-action="Privacy">privacy policy</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-section newsletter">
+                         <h2>Newsletter</h2>
+                         <p>Subscribe for latest updates</p>
+                         <form action="#" class="d-flex flex-column gap-3">
+                             <input type="email" placeholder="enter your email" required>
+                             <button type="submit">Subscribe</button>
+                         </form>
+                     </div>
+                 </div>
+                 </div>
+                 <div class="footer-bottom">
+                     <p>Created By <a href="#"> Miss Prakriti Khatiwada</a> | All Rights Reserved</p>
+                 </div>
+           
+        
+
+     </footer> 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        function downloadFile(filePath) {
+            var link = document.createElement('a');
+            link.href = filePath;
+            link.download = filePath.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
