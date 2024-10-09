@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SchoolManagementSystem.Models.Student>
+﻿@model IEnumerable<User>
 
 <a asp-controller="Student" asp-action="Create" class="btn btn-primary">Add Student</a>
 <div class="text-center">
@@ -8,9 +8,6 @@
                 <th scope="col">SN</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
-                <th scope="col">Section</th>
-                <th scope="col">Semester</th>
-                <th scope="col">Faculty</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -27,9 +24,7 @@
                         <th scope="row">@(i++)</th>
                         <td>@student.Name</td>
                         <td>@student.Email</td>
-                        <td>@student.Section?.SectionName</td>
-                        <td>@student.Semester?.Name</td>
-                        <td>@student.Faculty?.Name</td>
+              
                         <td>
                             <a asp-controller="Student" asp-action="Edit" asp-route-id="@student.Id" class="btn btn-warning">Edit</a>
                             <a asp-controller="Student" asp-action="Delete" asp-route-id="@student.Id" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this student?');">Delete</a>

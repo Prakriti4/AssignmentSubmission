@@ -23,17 +23,26 @@ namespace SchoolManagementSystem.Data
       );
 
             modelBuilder.Entity<Grade>().HasData(
- new Grade { Id = 1, LetterGrade = "A+" },
- new Grade { Id = 2, LetterGrade = "A" },
- new Grade { Id = 3, LetterGrade = "B+" },
- new Grade { Id = 4, LetterGrade = "B" },
- new Grade { Id = 5, LetterGrade = "C+" },
- new Grade { Id = 6, LetterGrade = "C" },
- new Grade { Id = 7, LetterGrade = "D" },
- new Grade { Id = 8, LetterGrade = "NG" }
+          new Grade { Id = 1, LetterGrade = "A+" },
+          new Grade { Id = 2, LetterGrade = "A" },
+          new Grade { Id = 3, LetterGrade = "B+" },
+          new Grade { Id = 4, LetterGrade = "B" },
+          new Grade { Id = 5, LetterGrade = "C+" },
+          new Grade { Id = 6, LetterGrade = "C" },
+          new Grade { Id = 7, LetterGrade = "D" },
+          new Grade { Id = 8, LetterGrade = "NG" }
+      );
+            modelBuilder.Entity<Teacher>()
+         .HasOne(t => t.Faculty)
+         .WithMany(f => f.Teachers)
+         .HasForeignKey(t => t.FacultyId);
 
- );
+            modelBuilder.Entity<Teacher>()
+                .HasOne(t => t.Semester)
+                .WithMany(s => s.Teachers)
+                .HasForeignKey(t => t.SemesterId);
 
+ 
             //FacultyandSemesterSeeding Data
             modelBuilder.Entity<Faculty>()
                .Property(f => f.NumberOfSemester)
@@ -44,6 +53,12 @@ namespace SchoolManagementSystem.Data
                 .HasMany(f => f.Students)
                 .WithOne(s => s.Faculty)
                 .HasForeignKey(s => s.FacultyId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Faculty>()
+                .HasMany(f=>f.Sections)
+                .WithOne(s => s.Faculty)
+                .HasForeignKey(s=>s.FacultyId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Faculty and Subjects relationship
@@ -102,21 +117,7 @@ namespace SchoolManagementSystem.Data
                 .HasForeignKey(sub => sub.FacultyId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // TeacherSemester configuration
-            modelBuilder.Entity<TeacherSemester>()
-                .HasKey(ts => new { ts.TeacherId, ts.SemesterId, ts.SectionId });
-
-            modelBuilder.Entity<TeacherSemester>()
-                .HasOne(ts => ts.Teacher)
-                .WithMany(t => t.TeacherSemesters)
-                .HasForeignKey(ts => ts.TeacherId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<TeacherSemester>()
-                .HasOne(ts => ts.Semester)
-                .WithMany(s => s.TeacherSemesters)
-                .HasForeignKey(ts => ts.SemesterId)
-                .OnDelete(DeleteBehavior.Restrict);
+            
           
             modelBuilder.Entity<Submission>()
                 .HasOne(s => s.Assignment)           
@@ -128,28 +129,59 @@ namespace SchoolManagementSystem.Data
                .HasOne(a => a.Student)              
                .WithMany(s => s.Submissions)          
                .HasForeignKey(a => a.StudentId)      
-               .OnDelete(DeleteBehavior.Restrict);   
-  
+               .OnDelete(DeleteBehavior.Restrict);
+
 
             modelBuilder.Entity<Submission>()
               .HasOne(s => s.Grade)
               .WithMany(g => g.Submissions)
               .HasForeignKey(s => s.GradeId)
               .OnDelete(DeleteBehavior.Cascade);
+            //Teacher and Section Many to Many Relationships 
+             modelBuilder.Entity<TeacherSection>()
+               .HasKey(ts =>new { ts.SectionId, ts.TeacherId });
 
+            modelBuilder.Entity<TeacherSection>()
+                .HasOne(ts => ts.Teacher)
+                .WithMany(t => t.TeacherSections)
+                .HasForeignKey(ts => ts.TeacherId)
+                .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<TeacherSection>()
+                .HasOne(ts => ts.Section)
+                .WithMany(t => t.TeacherSections)
+                .HasForeignKey(ts => ts.SectionId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            //Teacher and Subject Many to Many Relationships 
+            modelBuilder.Entity<TeacherSubject>()
+              .HasKey(ts => new { ts.SubjectId, ts.TeacherId });
+
+            modelBuilder.Entity<TeacherSubject>()
+                .HasOne(ts => ts.Teacher)
+                .WithMany(t => t.TeacherSubjects)
+                .HasForeignKey(ts => ts.TeacherId)
+                .OnDelete(DeleteBehavior.Restrict);
+            //Teacher and Subject Many to Many Relationships 
+
+            modelBuilder.Entity<TeacherSubject>()
+                .HasOne(ts => ts.Subject)
+                .WithMany(t => t.TeacherSubjects)
+                .HasForeignKey(ts => ts.SubjectId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Subject>? Subjects { get; set; }
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
         public DbSet<Semester> Semesters { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Section> Sections { get; set; }
+        public DbSet<Student>? Students { get; set; }
+        public DbSet<Section>? Sections { get; set; }
         public DbSet<Submission> Submissions { get; set; }
-        public DbSet<TeacherSemester> TeacherSemesters { get; set; }
+        public DbSet<TeacherSection> TeacherSections { get; set; }
+        public DbSet<TeacherSubject> TeacherSubjects { get; set; }
         public DbSet<Grade> Grades { get; set; }
      
     }

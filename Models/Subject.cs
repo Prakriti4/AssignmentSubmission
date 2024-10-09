@@ -11,14 +11,15 @@ namespace SchoolManagementSystem.Models
         public string Credits { get; set; }
         public string Description { get; set; }
 
-        public int FacultyId { get; set; }
+        public int? FacultyId { get; set; }
         public Faculty? Faculty { get; set; }
 
-        public int SemesterId {  get; set; }
+        public int? SemesterId {  get; set; }
         public Semester? Semester { get; set; }
+
         public ICollection<Assignment>? Assignments { get; set; }
         public ICollection<Submission>? Submissions { get; set; }
-
+        public ICollection<TeacherSubject>? TeacherSubjects { get; set; } 
 
     }
 }

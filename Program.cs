@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using SchoolManagementSystem.Models;
 using SchoolManagementSystem;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,15 +22,12 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<SchoolIdentityDbcontext>();
 
-
-
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
     options.AddPolicy("TeacherOnly", policy => policy.RequireRole("Teacher"));
     options.AddPolicy("StudentOnly", policy => policy.RequireRole("Student"));
 });
-
 
 var app = builder.Build();
 
@@ -51,7 +47,6 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -63,7 +58,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
+app.UseAuthentication(); ;
 
 app.UseAuthorization();
 app.MapRazorPages();
@@ -71,6 +66,5 @@ app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 
 app.Run();

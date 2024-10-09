@@ -11,8 +11,9 @@ namespace SchoolManagementSystem.Models
         public string Description { get; set; }
         public int NumberOfSemester { get; set; }
         public ICollection<Subject>? Subjects { get; set; }
-       
+       public ICollection<Section>? Sections { get; set; }
         public ICollection<Student>? Students { get; set; }
         public ICollection<Semester>? Semesters { get; set; }
+        public ICollection<Teacher>? Teachers { get; set; }
     }
 }

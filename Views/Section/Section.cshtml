@@ -1,0 +1,33 @@
+﻿@model SchoolManagementSystem.ViewModel.SectionViewModel
+
+<h2>Section: @Model.SectionName</h2>
+<p>Semester ID: @Model.SemesterId</p>
+<p>Faculty ID: @Model.FacultyId</p>
+
+<h3>Students in this Section:</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Students != null && Model.Students.Any())
+        {
+            foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>@student.StudentId</td>
+                    <td>@student.StudentName</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2" class="text-center">No students found in this section.</td>
+            </tr>
+        }
+    </tbody>
+</table>

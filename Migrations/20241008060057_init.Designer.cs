@@ -12,8 +12,8 @@ using SchoolManagementSystem.Data;
 namespace SchoolManagementSystem.Migrations
 {
     [DbContext(typeof(SchoolIdentityDbcontext))]
-    [Migration("20240926095819_ghgkh")]
-    partial class ghgkh
+    [Migration("20241008060057_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -248,6 +248,48 @@ namespace SchoolManagementSystem.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Grades");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            LetterGrade = "A+"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            LetterGrade = "A"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            LetterGrade = "B+"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            LetterGrade = "B"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            LetterGrade = "C+"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            LetterGrade = "C"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            LetterGrade = "D"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            LetterGrade = "NG"
+                        });
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Section", b =>
@@ -258,14 +300,18 @@ namespace SchoolManagementSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int?>("FacultyId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SectionName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SemesterId")
+                    b.Property<int?>("SemesterId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FacultyId");
 
                     b.HasIndex("SemesterId");
 
@@ -352,10 +398,10 @@ namespace SchoolManagementSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("FacultyId")
+                    b.Property<int?>("FacultyId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SemesterId")
+                    b.Property<int?>("SemesterId")
                         .HasColumnType("int");
 
                     b.Property<string>("SubjectCode")
@@ -421,24 +467,34 @@ namespace SchoolManagementSystem.Migrations
                     b.ToTable("Submissions");
                 });
 
-            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSemester", b =>
+            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSection", b =>
                 {
-                    b.Property<string>("TeacherId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("SemesterId")
-                        .HasColumnType("int");
-
                     b.Property<int>("SectionId")
                         .HasColumnType("int");
 
-                    b.HasKey("TeacherId", "SemesterId", "SectionId");
+                    b.Property<string>("TeacherId")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.HasIndex("SectionId");
+                    b.HasKey("SectionId", "TeacherId");
 
-                    b.HasIndex("SemesterId");
+                    b.HasIndex("TeacherId");
 
-                    b.ToTable("TeacherSemesters");
+                    b.ToTable("TeacherSections");
+                });
+
+            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSubject", b =>
+                {
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TeacherId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("SubjectId", "TeacherId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("TeacherSubjects");
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.User", b =>
@@ -456,6 +512,9 @@ namespace SchoolManagementSystem.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -466,6 +525,9 @@ namespace SchoolManagementSystem.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int>("FacultyId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
@@ -500,6 +562,9 @@ namespace SchoolManagementSystem.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SemesterId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -526,17 +591,9 @@ namespace SchoolManagementSystem.Migrations
                 {
                     b.HasBaseType("SchoolManagementSystem.Models.User");
 
-                    b.Property<DateTime>("DateofBirth")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("FacultyId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SectionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SemesterId")
-                        .HasColumnType("int");
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int")
+                        .HasColumnName("Student_SectionId");
 
                     b.HasIndex("FacultyId");
 
@@ -550,6 +607,15 @@ namespace SchoolManagementSystem.Migrations
             modelBuilder.Entity("SchoolManagementSystem.Models.Teacher", b =>
                 {
                     b.HasBaseType("SchoolManagementSystem.Models.User");
+
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("FacultyId");
+
+                    b.HasIndex("SectionId");
+
+                    b.HasIndex("SemesterId");
 
                     b.HasDiscriminator().HasValue("Teacher");
                 });
@@ -618,11 +684,17 @@ namespace SchoolManagementSystem.Migrations
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Section", b =>
                 {
+                    b.HasOne("SchoolManagementSystem.Models.Faculty", "Faculty")
+                        .WithMany("Sections")
+                        .HasForeignKey("FacultyId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("SchoolManagementSystem.Models.Semester", "Semester")
                         .WithMany("Sections")
                         .HasForeignKey("SemesterId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Faculty");
 
                     b.Navigation("Semester");
                 });
@@ -639,14 +711,12 @@ namespace SchoolManagementSystem.Migrations
                     b.HasOne("SchoolManagementSystem.Models.Faculty", "Faculty")
                         .WithMany("Subjects")
                         .HasForeignKey("FacultyId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("SchoolManagementSystem.Models.Semester", "Semester")
                         .WithMany("Subjects")
                         .HasForeignKey("SemesterId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Faculty");
 
@@ -681,29 +751,40 @@ namespace SchoolManagementSystem.Migrations
                     b.Navigation("Student");
                 });
 
-            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSemester", b =>
+            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSection", b =>
                 {
                     b.HasOne("SchoolManagementSystem.Models.Section", "Section")
-                        .WithMany("TeacherSemesters")
+                        .WithMany("TeacherSections")
                         .HasForeignKey("SectionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SchoolManagementSystem.Models.Semester", "Semester")
-                        .WithMany("TeacherSemesters")
-                        .HasForeignKey("SemesterId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("SchoolManagementSystem.Models.Teacher", "Teacher")
-                        .WithMany("TeacherSemesters")
+                        .WithMany("TeacherSections")
                         .HasForeignKey("TeacherId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Section");
 
-                    b.Navigation("Semester");
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("SchoolManagementSystem.Models.TeacherSubject", b =>
+                {
+                    b.HasOne("SchoolManagementSystem.Models.Subject", "Subject")
+                        .WithMany("TeacherSubjects")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SchoolManagementSystem.Models.Teacher", "Teacher")
+                        .WithMany("TeacherSubjects")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Subject");
 
                     b.Navigation("Teacher");
                 });
@@ -714,23 +795,47 @@ namespace SchoolManagementSystem.Migrations
                         .WithMany("Students")
                         .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_AspNetUsers_Faculties_FacultyId1");
 
                     b.HasOne("SchoolManagementSystem.Models.Section", "Section")
                         .WithMany("Students")
                         .HasForeignKey("SectionId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("SchoolManagementSystem.Models.Semester", "Semester")
                         .WithMany("Students")
                         .HasForeignKey("SemesterId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_AspNetUsers_Semesters_SemesterId1");
 
                     b.Navigation("Faculty");
 
                     b.Navigation("Section");
+
+                    b.Navigation("Semester");
+                });
+
+            modelBuilder.Entity("SchoolManagementSystem.Models.Teacher", b =>
+                {
+                    b.HasOne("SchoolManagementSystem.Models.Faculty", "Faculty")
+                        .WithMany("Teachers")
+                        .HasForeignKey("FacultyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SchoolManagementSystem.Models.Section", null)
+                        .WithMany("Teachers")
+                        .HasForeignKey("SectionId");
+
+                    b.HasOne("SchoolManagementSystem.Models.Semester", "Semester")
+                        .WithMany("Teachers")
+                        .HasForeignKey("SemesterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Faculty");
 
                     b.Navigation("Semester");
                 });
@@ -742,11 +847,15 @@ namespace SchoolManagementSystem.Migrations
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Faculty", b =>
                 {
+                    b.Navigation("Sections");
+
                     b.Navigation("Semesters");
 
                     b.Navigation("Students");
 
                     b.Navigation("Subjects");
+
+                    b.Navigation("Teachers");
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Grade", b =>
@@ -758,7 +867,9 @@ namespace SchoolManagementSystem.Migrations
                 {
                     b.Navigation("Students");
 
-                    b.Navigation("TeacherSemesters");
+                    b.Navigation("TeacherSections");
+
+                    b.Navigation("Teachers");
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Semester", b =>
@@ -769,7 +880,7 @@ namespace SchoolManagementSystem.Migrations
 
                     b.Navigation("Subjects");
 
-                    b.Navigation("TeacherSemesters");
+                    b.Navigation("Teachers");
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Subject", b =>
@@ -777,6 +888,8 @@ namespace SchoolManagementSystem.Migrations
                     b.Navigation("Assignments");
 
                     b.Navigation("Submissions");
+
+                    b.Navigation("TeacherSubjects");
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Student", b =>
@@ -786,7 +899,9 @@ namespace SchoolManagementSystem.Migrations
 
             modelBuilder.Entity("SchoolManagementSystem.Models.Teacher", b =>
                 {
-                    b.Navigation("TeacherSemesters");
+                    b.Navigation("TeacherSections");
+
+                    b.Navigation("TeacherSubjects");
                 });
 #pragma warning restore 612, 618
         }

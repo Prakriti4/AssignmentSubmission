@@ -1,14 +1,15 @@
 ﻿@model SchoolManagementSystem.Models.Student
+ @{
+      ViewData["Title"] = "Edit Student";
+  }    
 
-@{
-    ViewData["Title"] = "Edit Student";
-}
+<h2>Create Student</h2>
 
-<h2>Edit Student</h2>
 
 <div class="container">
-    <form asp-action="Edit" method="post" enctype="multipart/form-data">
-        @Html.AntiForgeryToken()
+
+    <form asp-controller="Student" asp-action="Edit" method="post" enctype="multipart/form-data">
+
 
         <div class="row">
             <!-- Student Name -->
@@ -34,9 +35,9 @@
 
             <!-- Date of Birth -->
             <div class="form-group col-lg-6 mt-2">
-                <label asp-for="DateofBirth" class="control-label"></label>
-                <input asp-for="DateofBirth" class="form-control" type="date" />
-                <span asp-validation-for="DateofBirth" class="text-danger"></span>
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" type="date" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
             </div>
 
             <!-- Course Dropdown -->
@@ -53,20 +54,13 @@
                 </select>
                 <span asp-validation-for="FacultyId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="SectionId" class="control-label">Section</label>
-                <select asp-for="SectionId" asp-items="ViewBag.Sections" class="form-control">
-                    <option value="">Select Faculty</option>
-                </select>
-                <span asp-validation-for="SectionId" class="text-danger"></span>
-            </div>
+
 
             <!-- Image Upload -->
             <div class="form-group col-lg-6 mt-2">
                 <label asp-for="Image" class="control-label"></label>
                 <div class="custom-file">
                     <input asp-for="Image" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
@@ -75,7 +69,7 @@
         <!-- Submit and Cancel Buttons -->
         <div class="mt-5">
             <button type="submit" class="btn btn-primary">Update</button>
-            <a asp-page="/Index" class="btn btn-secondary">Cancel</a>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
         </div>
     </form>
 </div>

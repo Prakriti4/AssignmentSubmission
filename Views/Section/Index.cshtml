@@ -1,6 +1,8 @@
 ﻿@model IEnumerable<SchoolManagementSystem.Models.Section>
 
-<a asp-controller="Section" asp-action="Create" class="btn btn-primary">Add Section</a>
+
+<a asp-controller="Section" asp-action="CreateStudent" class="btn btn-primary">View Section</a>
+
 
 <div class="text-center">
     <table class="table">
@@ -9,7 +11,8 @@
                 <th scope="col">SN</th>
                 <th scope="col">Section</th>
                 <th scope="col">Semester</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Faculty</th>
+        
             </tr>
         </thead>
         <tbody>
@@ -22,12 +25,10 @@
                 <tr>
                     <th scope="row">@(i++)</th>
                     <td>@currentSection.SectionName</td>
-                    <td>@currentSection.Semester.Name</td> <!-- Access Semester Name -->
+                    <td>@currentSection.Semester.Name</td> 
+                    <td>@currentSection.Faculty.Name</td>
                     
-                    <td>
-                        <a asp-controller="Section" asp-action="Edit" asp-route-id="@currentSection.Id" class="btn btn-warning">Edit</a>
-                        <a asp-controller="Section" asp-action="Delete" asp-route-id="@currentSection.Id" class="btn btn-danger">Delete</a>
-                    </td>
+               
                 </tr>
             }
         </tbody>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -16,11 +17,13 @@ namespace SchoolManagementSystem.Controllers
     {
         private readonly SchoolIdentityDbcontext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly UserManager<User> _userManager;
 
-        public AssignmentController(SchoolIdentityDbcontext context, IWebHostEnvironment webHostEnvironment)
+        public AssignmentController(SchoolIdentityDbcontext context, IWebHostEnvironment webHostEnvironment, UserManager<User> userManager)
         {
             _webHostEnvironment=webHostEnvironment;
             _context = context;
+            _userManager=userManager;
         }
 
         public string UploadedFile(Assignment model, out string originalFileName)
@@ -44,9 +47,16 @@ namespace SchoolManagementSystem.Controllers
    
         public async Task<IActionResult> Index()
         {
+            var user = await _userManager.GetUserAsync(User);
+            if(user == null)
+            {
+                return NotFound();
+            }
+
             var assignment = await _context.Assignments
-            .Include(s => s.Subject)
-            .ToListAsync();
+                                           .Include(s => s.Subject)
+                                           .Where(a => a.Subject.TeacherSubjects.Any(a => a.TeacherId == user.Id))
+                                           .ToListAsync();
 
             Console.WriteLine(assignment);
 

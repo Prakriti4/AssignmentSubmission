@@ -1,0 +1,23 @@
+﻿@model SchoolManagementSystem.ViewModel.SectionViewModel
+
+<h2>Section: @Model.SectionName</h2>
+<p>Semester: @Model.SemesterId</p>
+
+<h3>Students in this Section:</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.StudentId</td>
+                <td>@student.StudentName</td>
+            </tr>
+        }
+    </tbody>
+</table>
